@@ -1,66 +1,26 @@
-# Website Models – Portfolio Pieces
+# Website models / demos
 
-Professional website templates created for **Vitor Macieira** (Full-Stack Developer & AI Specialist).
+A few small sites I put together to show different kinds of work:
 
-These are ready-to-show demo sites that match the experience described in the resume:
-- Modern, clean UI
-- Responsive design
-- Real interaction (theme toggle, cart, filters)
-- Suitable for a GitHub portfolio or live demos
+- **portfolio-ai** – personal portfolio (dark/light mode)
+- **business-landing** – simple marketing/landing page
+- **ecommerce-demo** – product grid + cart (vanilla JS)
 
----
+Nothing fancy, just clean HTML/CSS/JS. You can open any `index.html` directly in the browser.
 
-## 1. Portfolio AI (`portfolio-ai/`)
+## portfolio-ai
+Personal site with about, skills, project cards and contact.  
+Has a basic theme toggle that remembers the choice.
 
-Personal developer portfolio focused on Full-Stack + AI work.
+## business-landing
+Agency-style landing page with services, a couple of testimonials and a CTA.
 
-**Features:**
-- Dark / light theme toggle
-- About, Skills, Projects, Contact sections
-- Project cards matching the resume (AI chatbot, e-commerce rebuild, nonprofit site, automation dashboard)
-- Fully responsive
-
-**How to view:** Open `portfolio-ai/index.html` in a browser.
+## ecommerce-demo
+Mini store with category filters, search and a side cart.  
+All client-side, no backend.
 
 ---
 
-## 2. Business Landing (`business-landing/`)
-
-Conversion-oriented landing page for a digital agency / consulting brand.
-
-**Features:**
-- Hero with floating metric cards
-- Services grid
-- “Why us” section
-- Testimonials
-- Strong CTA
-
-**How to view:** Open `business-landing/index.html` in a browser.
-
----
-
-## 3. E-Commerce Demo (`ecommerce-demo/`)
-
-Interactive product store demo.
-
-**Features:**
-- Product grid with categories and search
-- Add to cart / remove
-- Side cart drawer with live total
-- Checkout demo alert
-
-**How to view:** Open `ecommerce-demo/index.html` in a browser.
-
----
-
-## How to use as portfolio
-
-1. Upload each folder to a GitHub repository (or one monorepo with three folders).
-2. Enable GitHub Pages (or deploy to Netlify / Vercel) for live demos.
-3. Link the live URLs from your resume and LinkedIn.
-
-You can also customize colors, text, and images before publishing.
-
----
-
-**Contact:** jvmacieira1620@gmail.com · Charleston, SC
+Vitor Macieira  
+Charleston, SC  
+jvmacieira1620@gmail.com

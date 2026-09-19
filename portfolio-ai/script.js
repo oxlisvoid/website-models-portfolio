@@ -1,4 +1,4 @@
-// Theme toggle
+// simple theme switch – stores preference in localStorage
 const toggle = document.getElementById("theme-toggle");
 const html = document.documentElement;
 
@@ -21,7 +21,7 @@ toggle.addEventListener("click", () => {
   }
 });
 
-// Smooth active nav (optional enhancement)
+// highlight current section in nav while scrolling
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -29,9 +29,13 @@ window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((section) => {
     const top = section.offsetTop - 100;
-    if (scrollY >= top) current = section.getAttribute("id");
+    if (window.scrollY >= top) {
+      current = section.getAttribute("id");
+    }
   });
+
   navLinks.forEach((link) => {
-    link.style.color = link.getAttribute("href") === `#${current}` ? "var(--accent)" : "";
+    const href = link.getAttribute("href");
+    link.style.color = href === "#" + current ? "var(--accent)" : "";
   });
 });
