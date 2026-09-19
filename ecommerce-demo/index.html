@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopLite | Demo Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container bar">
+      <a href="#" class="logo">Shop<span>Lite</span></a>
+      <div class="search">
+        <input type="search" placeholder="Search products..." id="search" />
+      </div>
+      <button class="cart-btn" id="cart-toggle">
+        🛒 Cart <span class="badge" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="container">
+      <h1>Quality products, modern experience</h1>
+      <p>Demo e-commerce store showcasing clean UI, product grid, and cart interaction.</p>
+    </div>
+  </section>
+
+  <main class="container main">
+    <aside class="filters">
+      <h3>Categories</h3>
+      <button class="filter active" data-cat="all">All</button>
+      <button class="filter" data-cat="electronics">Electronics</button>
+      <button class="filter" data-cat="accessories">Accessories</button>
+      <button class="filter" data-cat="home">Home</button>
+    </aside>
+
+    <section class="products" id="products">
+      <!-- filled by JS -->
+    </section>
+  </main>
+
+  <!-- Cart drawer -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-head">
+      <h2>Your Cart</h2>
+      <button id="close-cart">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="total">Total: <strong id="cart-total">$0.00</strong></div>
+      <button class="btn checkout" id="checkout">Checkout (Demo)</button>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="container">
+      <p>ShopLite Demo · Template by Vitor Macieira · Full-Stack Developer</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
