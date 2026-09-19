@@ -1,3 +1,4 @@
+// demo product list – replace with real data / API later
 const products = [
   { id: 1, name: "Wireless Headphones", price: 89.99, cat: "electronics", emoji: "🎧" },
   { id: 2, name: "Smart Watch", price: 149.00, cat: "electronics", emoji: "⌚" },
